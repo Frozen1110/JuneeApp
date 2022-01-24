@@ -1,0 +1,7 @@
+<resources>
+    <string name="reactNativeCodePush_androidDeploymentKey" moduleConfig="true">CODEPUSH_DEPLOYMENT_KEY_HERE</string>
+    <string name="app_name">Junee</string>
+    <string name="appCenterCrashes_whenToSendCrashes" moduleConfig="true" translatable="false">DO_NOT_ASK_JAVASCRIPT</string>
+    <string name="appCenterAnalytics_whenToEnableAnalytics" moduleConfig="true" translatable="false">ALWAYS_SEND</string>
+    <string name="CodePushDeploymentKey" moduleConfig="true">CODEPUSH_DEPLOYMENT_KEY_HERE</string>
+</resources>
