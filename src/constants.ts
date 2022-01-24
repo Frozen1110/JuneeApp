@@ -1,0 +1,1 @@
+export const AuthTokenKey = 'token';

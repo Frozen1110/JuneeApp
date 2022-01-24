@@ -1,0 +1,18 @@
+{
+  "default": {
+    "apiHost": "",
+    "isSandbox":  false 
+  },
+  "development": {
+    "apiHost": "http://localhost:3000",
+    "isSandbox": false
+  },
+  "test": {
+    "apiHost": "http://test.junee.co",
+    "isSandbox": false
+  },
+  "production": {
+    "apiHost": "http://app.junee.co",
+    "isSandbox": false
+  }
+}

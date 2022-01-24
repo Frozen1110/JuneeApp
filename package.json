@@ -1,0 +1,109 @@
+{
+  "name": "junee-user-app",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "react-native start",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "build": "npm install && cd ./android && ./gradlew build && cd ../ios && pod install --repo-update && cd ..",
+    "clean": "rm -rf ./node_modules **/{.project,*.iml,build} ./ios/{Pods,*.xcworkspace} ./android/{.gradle,.idea}",
+    "test": "jest",
+    "lint": "eslint .",
+    "format": "prettier --write \"**/*.+(js|ts|tsx)\""
+  },
+  "dependencies": {
+    "@react-native-community/cli-platform-android": "^4.13.0",
+    "@types/lodash": "^4.14.177",
+    "@types/react": "^16.14.21",
+    "@types/react-native": "^0.63.57",
+    "@types/react-navigation": "^3.4.0",
+    "@types/styled-components": "^5.1.15",
+    "appcenter": "4.2.0",
+    "appcenter-analytics": "4.2.0",
+    "appcenter-crashes": "4.2.0",
+    "axios": "^0.24.0",
+    "axios-curlirize": "^2.0.0",
+    "jwt-decode": "^3.1.2",
+    "lodash": "^4.17.21",
+    "react": "17.0.2",
+    "react-native": "0.66.3",
+    "react-native-camera": "^4.2.1",
+    "react-native-code-push": "^7.0.4",
+    "react-native-config": "^1.4.5",
+    "react-native-device-info": "^8.4.8",
+    "react-native-gesture-handler": "^1.8.0",
+    "react-native-iphone-x-helper": "^1.3.0",
+    "react-native-keyboard-aware-scroll-view": "^0.9.5",
+    "react-native-maps": "^0.29.4",
+    "react-native-modal": "^13.0.0",
+    "react-native-paper": "^4.10.1",
+    "react-native-permissions": "^3.1.0",
+    "react-native-qrcode-scanner": "^1.5.4",
+    "react-native-reanimated": "^1.13.1",
+    "react-native-safe-area-context": "^3.3.2",
+    "react-native-screens": "^2.11.0",
+    "react-native-sensitive-info": "^5.5.8",
+    "react-native-status-bar-height": "^2.6.0",
+    "react-native-svg": "^12.1.1",
+    "react-native-svg-transformer": "^0.14.3",
+    "react-native-vector-icons": "^9.0.0",
+    "react-navigation": "^4.4.2",
+    "react-navigation-drawer": "^2.5.2",
+    "react-navigation-stack": "^1.10.3",
+    "react-navigation-tabs": "^2.9.2",
+    "styled-components": "^5.3.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/runtime": "^7.16.3",
+    "@react-native-community/eslint-config": "^2.0.0",
+    "@types/axios-curlirize": "^1.3.2",
+    "@types/jest": "^26.0.15",
+    "@types/react-test-renderer": "^16.9.3",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.6.0",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "babel-preset-react-native": "^4.0.1",
+    "eslint": "^7.11.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-plugin-react-native": "^3.11.0",
+    "jest": "25.5.4",
+    "metro-react-native-babel-preset": "^0.63.0",
+    "react-native-typescript-transformer": "^1.2.13",
+    "react-test-renderer": "^16.13.1",
+    "ts-jest": "^25.5.1",
+    "typescript": "^3.9.7"
+  },
+  "jest": {
+    "preset": "react-native",
+    "transform": {
+      "^.+\\.jsx?$": "<rootDir>/node_modules/babel-jest",
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ],
+    "transformIgnorePatterns": [
+      "node_modules/(?!(react-[a-z|-]*)/)"
+    ],
+    "globals": {
+      "ts-jest": {
+        "useBabelrc": true
+      }
+    },
+    "setupFiles": [
+      "./node_modules/appcenter/test/AppCenterMock.js",
+      "./node_modules/appcenter-analytics/test/AppCenterAnalyticsMock.js",
+      "./node_modules/appcenter-crashes/test/AppCenterCrashesMock.js"
+    ]
+  }
+}
